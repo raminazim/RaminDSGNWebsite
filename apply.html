@@ -54,7 +54,7 @@ body {
 /* INPUTS */
 input, textarea, select {
   width: 100%;
-  padding: 18px 20px; /* 👈 increased padding */
+  padding: 18px 20px;
   border-radius: 8px;
   background: transparent;
   border: 1px solid rgba(255,255,255,0.2);
@@ -75,7 +75,7 @@ input:focus, textarea:focus, select:focus {
 /* STEPS */
 .step { 
   display: none; 
-  padding: 10px 0; /* 👈 vertical breathing inside steps */
+  padding: 10px 0;
 }
 .step.active { display: block; }
 
@@ -135,7 +135,7 @@ class="mt-10 sm:mt-12 space-y-10">
 <input type="hidden" name="_subject" value="NEW STRATEGY APPLICATION">
 <input type="hidden" name="_captcha" value="false">
 
-<!-- STEP 1 -->
+<!-- STEPS (unchanged) -->
 <div class="step active space-y-5">
 <input name="Full Name" placeholder="Full Name" required>
 <input name="Business Name" placeholder="Business Name">
@@ -146,7 +146,6 @@ class="mt-10 sm:mt-12 space-y-10">
 <input name="Phone" placeholder="Phone">
 </div>
 
-<!-- STEP 2 -->
 <div class="step space-y-5">
 <input name="Instagram" placeholder="Instagram">
 <input name="TikTok" placeholder="TikTok">
@@ -154,7 +153,6 @@ class="mt-10 sm:mt-12 space-y-10">
 <input name="Other Platforms" placeholder="Other Platforms">
 </div>
 
-<!-- STEP 3 -->
 <div class="step space-y-5">
 <textarea name="Business Description" placeholder="What does your business do?"></textarea>
 <textarea name="Services" placeholder="What do you offer?"></textarea>
@@ -164,7 +162,6 @@ class="mt-10 sm:mt-12 space-y-10">
 <input name="Team" placeholder="Solo or team">
 </div>
 
-<!-- STEP 4 -->
 <div class="step space-y-5">
 <input name="Revenue Range" placeholder="Monthly revenue range">
 <input name="Leads" placeholder="Monthly leads">
@@ -175,7 +172,6 @@ class="mt-10 sm:mt-12 space-y-10">
 <input name="Website Traffic" placeholder="Website traffic">
 </div>
 
-<!-- STEP 5 -->
 <div class="step space-y-5">
 <input name="Posting Frequency" placeholder="How often do you post?">
 <input name="Content Type" placeholder="Type of content">
@@ -186,7 +182,6 @@ class="mt-10 sm:mt-12 space-y-10">
 <textarea name="Worst Content" placeholder="Worst content"></textarea>
 </div>
 
-<!-- STEP 6 -->
 <div class="step space-y-5">
 <input name="Social Rating" placeholder="Social (1–10)">
 <input name="Brand Rating" placeholder="Brand (1–10)">
@@ -194,7 +189,6 @@ class="mt-10 sm:mt-12 space-y-10">
 <textarea name="Growth Block" placeholder="What’s holding you back?"></textarea>
 </div>
 
-<!-- STEP 7 -->
 <div class="step space-y-5">
 <textarea name="Ideal Customer" placeholder="Ideal customer"></textarea>
 <textarea name="Problem" placeholder="Problem you solve"></textarea>
@@ -202,7 +196,6 @@ class="mt-10 sm:mt-12 space-y-10">
 <input name="Competitors" placeholder="Competitors">
 </div>
 
-<!-- STEP 8 -->
 <div class="step space-y-5">
 <input name="90 Day Goal" placeholder="90 day goal">
 <input name="Long Term Goal" placeholder="6–12 month goal">
@@ -210,7 +203,6 @@ class="mt-10 sm:mt-12 space-y-10">
 <textarea name="Perfect Outcome" placeholder="Perfect outcome"></textarea>
 </div>
 
-<!-- STEP 9 -->
 <div class="step space-y-5">
 <textarea name="Offer" placeholder="Offer"></textarea>
 <textarea name="Sales Process" placeholder="Sales process"></textarea>
@@ -219,14 +211,12 @@ class="mt-10 sm:mt-12 space-y-10">
 <textarea name="Leak" placeholder="Where losing customers?"></textarea>
 </div>
 
-<!-- STEP 10 -->
 <div class="step space-y-5">
 <input name="Change Strategy" placeholder="Willing to change?">
 <input name="Time" placeholder="Time available?">
 <input name="Budget" placeholder="Budget?">
 </div>
 
-<!-- STEP 11 -->
 <div class="step space-y-5">
 <textarea name="Why RaminDSGN" placeholder="Why RaminDSGN?"></textarea>
 <textarea name="Why Apply" placeholder="Why apply?"></textarea>
@@ -247,11 +237,25 @@ NEXT
 </button>
 </div>
 
+<!-- TERMS NOTICE -->
+<p class="text-white/40 text-[10px] sm:text-xs text-center tracking-wide leading-relaxed mt-6 px-2">
+  By submitting this application, you agree to our 
+  <a href="ToS.html" target="_blank" rel="noopener noreferrer"
+     class="underline hover:text-white transition">
+     Terms of Service
+  </a> 
+  and 
+  <a href="ToS.html" target="_blank" rel="noopener noreferrer"
+     class="underline hover:text-white transition">
+     Privacy Policy
+  </a>.
+</p>
+
 </form>
 </section>
 
 <footer class="text-center text-white/40 text-xs pb-10 tracking-widest">
-  ©  RaminDSGN <script>document.write(new Date().getFullYear())</script> <br>
+  © RaminDSGN <script>document.write(new Date().getFullYear())</script><br>
   Toronto, ON
 </footer>
 
